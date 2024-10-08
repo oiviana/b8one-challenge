@@ -4,8 +4,8 @@ import WishlistButton from "../../Wishlist/WishlistButton";
 export default function ProductCard() {
 
     return (
-        <div className="bg-c-grayscale-0 w-full max-w-[304px] h-[568px] p-7 flex flex-col  rounded-lg shadow-md">
-            <div className="relative w-60 h-60 overflow-hidden ">
+        <div className="bg-c-grayscale-0 w-full max-w-[304px] h-[568px] p-7 flex flex-col rounded-lg shadow-md mx-auto">
+            <div className="relative w-full h-auto max-h-60  max-w-60 overflow-hidden ">
                 <img src="/mock/product1.png" alt="teste" />
                 <WishlistButton/>
             </div>
