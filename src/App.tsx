@@ -1,11 +1,9 @@
-import ProductCard from "./components/Product/ProductCard"
+import ProductGrid from "./components/Product/ProductGrid"
 
 function App() {
 
   return (
-    <>
-      <ProductCard />
-    </>
+    <ProductGrid />
   )
 }
 
