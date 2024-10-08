@@ -10,7 +10,7 @@ export default function ProductCard() {
                 <WishlistButton/>
             </div>
             <div className="flex flex-col self-end items-start gap-6 flex-1  justify-between">
-                <span className="text-sm text-c-grayscale-900 font-medium mt-4">
+                <span className="text-sm text-c-grayscale-900 font-medium mt-4 overflow-hidden text-ellipsis line-clamp-[4] max-h-20">
                     Monitor LED 27'' Gamer Curvo Samsung  1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50
                 </span>
                 <div className="flex flex-col gap-1">
