@@ -16,7 +16,7 @@ const products = productMock.map((product) => {
 export default function ProductGrid() {
 
     return (
-        <div className="grid grid-cols-1 gap-6 xl:gap-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] w-full max-w-[1816px] mx-auto mt-32">
+        <div className="grid grid-cols-1 gap-6 xl:gap-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] w-full max-w-[1816px] mx-auto mt-32 px-4">
             {products}
         </div>
     )
