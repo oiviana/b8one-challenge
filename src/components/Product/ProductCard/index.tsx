@@ -1,8 +1,7 @@
 import AddToCart from "../../Cart/AddToCart";
 import WishlistButton from "../../Wishlist/WishlistButton";
 
-export default function ProductCard(ProductData: ProductData) {
-    const {productName, productImage, productPrice} = ProductData
+export default function ProductCard({ productId, productImage, productName,productPrice}: ProductData) {
     const {sellingPrice, listPrice, installments} = productPrice 
     const parceledPrice = sellingPrice / installments
 
