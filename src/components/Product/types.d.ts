@@ -1,7 +1,8 @@
 interface ProductData {
     productId: string;
     productName: string;
-    productImage: string;
+    imageSrc: string;
+    imageAlt: string;
     productPrice: {
         listPrice: number;
         sellingPrice: number;
