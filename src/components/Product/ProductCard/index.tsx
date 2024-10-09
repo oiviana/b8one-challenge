@@ -3,8 +3,13 @@ import WishlistButton from "../../Wishlist/WishlistButton";
 
 export default function ProductCard({ productId, imageAlt, imageSrc, productName, productPrice }: ProductData) {
     const { sellingPrice, listPrice, installments } = productPrice
-    const parceledPrice = sellingPrice / installments
-
+    const parceledPrice = Math.ceil((sellingPrice / installments) * 100) / 100;
+    function formatPrice(value: number) {
+        return new Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+        }).format(value);
+    }
     return (
         <div className="bg-c-grayscale-0 w-full max-w-[304px] h-[568px] p-7 flex flex-col rounded-lg shadow-md mx-auto">
             <div className="relative w-full h-auto max-h-60  max-w-60 overflow-hidden ">
@@ -16,9 +21,9 @@ export default function ProductCard({ productId, imageAlt, imageSrc, productName
                     {productName}
                 </span>
                 <div className="flex flex-col gap-1">
-                    <span className="text-sm text-c-grayscale-600 line-through">R$ {listPrice}</span>
-                    <span className="text-xl font-semibold text-c-red-500">R$ {sellingPrice}</span>
-                    <span className="text-xs text-c-grayscale-900">em até<b> {installments}x de R$ {parceledPrice}</b>sem juros</span>
+                    <span className="text-sm text-c-grayscale-600 line-through">R$ {formatPrice(listPrice)}</span>
+                    <span className="text-xl font-semibold text-c-red-500">R$ {formatPrice(sellingPrice)}</span>
+                    <span className="text-xs text-c-grayscale-900">em até<b> {installments}x de {formatPrice(parceledPrice)}</b> sem juros</span>
                 </div>
                 <AddToCart />
             </div>
