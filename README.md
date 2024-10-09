@@ -19,8 +19,8 @@ Este é um simples projeto para o desafio de front-end da B8one. Ele consiste nu
 - Context API
 
  # Evidencias:
--![{9198BC30-F3BB-4620-AA10-6E75D4B0C920}](https://github.com/user-attachments/assets/ce2db89f-a8f4-49df-9919-9641ffe1cc03)
--![{E178391E-2062-429F-8A51-4A89146C6129}](https://github.com/user-attachments/assets/e6a6197d-ac21-4f3e-a91a-191420841a82)
+![{9198BC30-F3BB-4620-AA10-6E75D4B0C920}](https://github.com/user-attachments/assets/ce2db89f-a8f4-49df-9919-9641ffe1cc03)
+![{E178391E-2062-429F-8A51-4A89146C6129}](https://github.com/user-attachments/assets/e6a6197d-ac21-4f3e-a91a-191420841a82)
 
 
  # Deploy:
