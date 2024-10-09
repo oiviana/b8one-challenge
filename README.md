@@ -24,4 +24,4 @@ Este é um simples projeto para o desafio de front-end da B8one. Ele consiste nu
 
 
  # Deploy:
--!["Desafio B8one"](https://b8one-challenge-gamma.vercel.app/)
+[Desafio B8one](https://b8one-challenge-gamma.vercel.app/)
