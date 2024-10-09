@@ -11,7 +11,7 @@ export default function ProductCard({ productId, imageAlt, imageSrc, productName
         }).format(value);
     }
     return (
-        <div className="bg-c-grayscale-0 w-full max-w-[304px] h-[568px] p-7 flex flex-col rounded-lg shadow-md mx-auto">
+        <div className="bg-c-grayscale-0 w-full max-w-[304px] h-[568px] p-7 flex flex-col rounded-lg hover:shadow-md transition-shadow cursor-pointer mx-auto">
             <div className="relative w-full h-auto max-h-60  max-w-60 overflow-hidden ">
                 <img src={imageSrc} alt={imageAlt} />
                 <WishlistButton />
@@ -21,8 +21,8 @@ export default function ProductCard({ productId, imageAlt, imageSrc, productName
                     {productName}
                 </span>
                 <div className="flex flex-col gap-1">
-                    <span className="text-sm text-c-grayscale-600 line-through">R$ {formatPrice(listPrice)}</span>
-                    <span className="text-xl font-semibold text-c-red-500">R$ {formatPrice(sellingPrice)}</span>
+                    <span className="text-sm text-c-grayscale-600 line-through">{formatPrice(listPrice)}</span>
+                    <span className="text-xl font-semibold text-c-red-500">{formatPrice(sellingPrice)}</span>
                     <span className="text-xs text-c-grayscale-900">em até<b> {installments}x de {formatPrice(parceledPrice)}</b> sem juros</span>
                 </div>
                 <AddToCart />
