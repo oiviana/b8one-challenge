@@ -16,6 +16,7 @@ export default {
         'c-grayscale-0': '#FFFFFF',
         'c-grayscale-200': '#F2F3F6',
         'c-grayscale-600': '#B5B5B6',
+        'c-grayscale-700': '#848587',
         'c-grayscale-900': '#1C1C1C',
       },
     },

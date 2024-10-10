@@ -17,9 +17,9 @@ export default function ProductCard({ productId, imageAlt, imageSrc, productName
                     {productName}
                 </span>
                 <div className="flex flex-col gap-1">
-                    <span className="text-sm text-c-grayscale-600 line-through">{formatPrice(listPrice)}</span>
+                    <span className="text-sm text-c-grayscale-600 line-through font-medium">{formatPrice(listPrice)}</span>
                     <span className="text-xl font-semibold text-c-red-500">{formatPrice(sellingPrice)}</span>
-                    <span className="text-xs text-c-grayscale-900">em até<b> {installments}x de {formatPrice(parceledPrice)}</b> sem juros</span>
+                    <span className="text-xs text-c-grayscale-700">em até<b className="text-c-grayscale-900"> {installments}x de {formatPrice(parceledPrice)}</b> sem juros</span>
                 </div>
                 <AddToCart productId={productId}/>
             </div>
