@@ -3,7 +3,8 @@
 </p>
 
 <p align="center">
-Este é um simples projeto para o desafio de front-end da B8one. Ele consiste numa página simples para exibição de produtos, com funcionalidades de adicionar ao carrinho ou à lista de desejos.
+Este é um simples projeto para o desafio de front-end da B8one. Ele consiste numa página simples para exibição de produtos, com funcionalidades de adicionar ao carrinho ou à lista de desejos.<br>
+Aviso: O código deste repositório pode ter sido copiado em outros desafios similares!
 </p>
 
 # Instalação do projeto:
